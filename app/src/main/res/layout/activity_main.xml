@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/petText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello Owner!"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        android:layout_margin="20dp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/petStateImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/monster1"
+        android:layout_marginHorizontal="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ProgressBar
+            android:id="@+id/overallStatus"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="40"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:progressTint="@color/colorAccent"
+            android:progressBackgroundTint="#eeeeee"/>
+        <TextView
+            android:id="@+id/overall"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="10%"
+            android:textAlignment="center"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ProgressBar
+            android:id="@+id/foodStatus"
+            style="@android:style/Widget.DeviceDefault.ProgressBar.Horizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="60"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"/>
+        <TextView
+            android:id="@+id/food"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="10%"
+            android:textAlignment="center"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ProgressBar
+            android:id="@+id/playStatus"
+            style="@android:style/Widget.DeviceDefault.ProgressBar.Horizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="50"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/play"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="10%"
+            android:textAlignment="center"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ProgressBar
+            android:id="@+id/hygieneStatus"
+            style="@android:style/Widget.DeviceDefault.ProgressBar.Horizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="60"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"/>
+        <TextView
+            android:id="@+id/hygiene"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="10%"
+            android:textAlignment="center"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ProgressBar
+            android:id="@+id/loveStatus"
+            style="@android:style/Widget.DeviceDefault.ProgressBar.Horizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="60"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"/>
+        <TextView
+            android:id="@+id/love"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="10%"
+            android:textAlignment="center"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/option1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/apple"
+            android:scaleType="fitCenter"
+            android:layout_marginHorizontal="15dp"
+            android:background="@android:color/transparent"
+            android:onClick="addValue"/>
+
+        <ImageButton
+            android:id="@+id/option2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ball"
+            android:scaleType="fitCenter"
+            android:layout_marginHorizontal="15dp"
+            android:background="@android:color/transparent"
+            android:onClick="addValue"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <ImageButton
+            android:id="@+id/option3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/bubbles"
+            android:scaleType="fitCenter"
+            android:layout_marginHorizontal="15dp"
+            android:background="@android:color/transparent"
+            android:onClick="addValue"/>
+
+        <ImageButton
+            android:id="@+id/option4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/love"
+            android:scaleType="fitCenter"
+            android:layout_marginHorizontal="15dp"
+            android:background="@android:color/transparent"
+            android:onClick="addValue"/>
+    </LinearLayout>
+
+</LinearLayout >
+</ScrollView>
